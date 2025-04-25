@@ -24,4 +24,5 @@ jobs:
       uses: browser-actions/setup-chrome@v1
 
     - name: Run Selenium Script
-      run: mvn -q exec:java -Dexec.cleanupDaemonThreads=false -Dexec.mainClass="com.selenium.LaunchBrowser"
+      run: mvn exec:java -Dexec.cleanupDaemonThreads=false -Dexec.mainClass="com.selenium.LaunchBrowser"
+
