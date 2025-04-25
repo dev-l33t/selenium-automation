@@ -12,7 +12,7 @@ public class LaunchBrowser {
         options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
         WebDriver driver = new ChromeDriver(options);
 
-        driver.get("https://www.google.com");
+        driver.get("https://www.pratiks-desk.site");
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("Selenium GitHub Actions demo");
         searchBox.submit();
