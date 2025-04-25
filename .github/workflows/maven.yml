@@ -23,6 +23,5 @@ jobs:
     - name: Set up Chrome
       uses: browser-actions/setup-chrome@v1
 
-    - name: Run Selenium Script
-      run: mvn exec:java -Dexec.cleanupDaemonThreads=false -Dexec.mainClass="com.selenium.LaunchBrowser"
-
+    - name: Run Maven Test
+      run: mvn -q compile exec:java -Dexec.mainClass="com.selenium.LaunchBrowser"
