@@ -21,7 +21,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Set up Chrome
-      uses: browser-actions/setup-chrome@v1
-      
-- name: Run Maven Test
-  run: mvn -q compile exec:java -Dexec.cleanupDaemonThreads=false -Dexec.mainClass="com.selenium.LaunchBrowser"
+      uses: browser-actions/setup-chrome@v
+
+     - name: Run Maven Test
+     run: mvn compile exec:java -Dexec.mainClass="com.selenium.LaunchBrowser"
