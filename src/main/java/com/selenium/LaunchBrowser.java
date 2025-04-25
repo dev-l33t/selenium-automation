@@ -18,6 +18,8 @@ public class LaunchBrowser {
         searchBox.submit();
 
         System.out.println("Page title is: " + driver.getTitle());
+        System.out.println("=== PAGE TITLE: " + driver.getTitle() + " ===");
+
 
         driver.quit();
     }
