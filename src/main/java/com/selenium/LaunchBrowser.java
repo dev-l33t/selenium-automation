@@ -18,7 +18,7 @@ public class LaunchBrowser {
         Thread.sleep(2000); // wait for 2 seconds
         searchBox.sendKeys("pratiks-desk.site");
         searchBox.submit();
-        Thread.sleep(3000); // wait for 2 seconds
+        Thread.sleep(10000); // wait for 10 seconds
         System.out.println("Page title is: " + driver.getTitle());
         driver.quit();
     }
